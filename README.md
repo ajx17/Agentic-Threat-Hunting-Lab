@@ -2,7 +2,7 @@
 
 
 ## Project Overview
-Designed and deployed an isolated threat hunting lab within a Proxmox hypervisor, integrated with a custom AI orchestrator (OpenClaw) for out of band management. Simulated a modern Active Directory SMB brute force attack using Kali Linux (NetExec), and successfully captured, routed, and visualized the attack telemetry in a self hosted Splunk Enterprise SIEM.
+Designed and deployed an isolated threat hunting lab within a Proxmox hypervisor, integrated with a custom AI orchestrator (OpenClaw) for out of band management. Simulated a modern Active Directory SMB brute force attack using Kali Linux (NetExec), and successfully captured, routed, and visualized the attack telemetry in a self hosted Splunk Enterprise SIEM which is deployed on my homelab server to ensure access is always available.
 
 ## Architecture
 ```mermaid
