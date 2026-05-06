@@ -1,0 +1,11 @@
+# 1) Verify Indexer Status
+index=_internal
+
+# 2) Basic Threat Hunt for Failed Logons
+index=* source="WinEventLog:Security" "eventcode=4625"
+
+# 3) Attack Aggregation by IP and Account
+index=* source="WinEventLog:Security" "eventcode=4625" | stats count by Source_Network_Address, Account_Name
+
+# 4) Visual Timechart of Brute Force Spike
+index=* source="WinEventLog:Security" "eventcode=4625" | timechart count by Source_Network_Address
